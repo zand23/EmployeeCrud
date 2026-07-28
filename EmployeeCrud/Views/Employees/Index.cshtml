@@ -1,0 +1,153 @@
+﻿@model IEnumerable<EmployeeCrud.Models.Employee>
+
+@{
+    ViewData["Title"] = "پرسنل";
+}
+
+<div class="page-header">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+        <div>
+            <h1 class="page-title">
+                مدیریت پرسنل
+            </h1>
+
+            <p class="page-description">
+                مشاهده و مدیریت اطلاعات کارکنان
+            </p>
+        </div>
+
+        <a asp-action="Create"
+           class="btn btn-primary btn-icon">
+
+            <i class="bi bi-plus-lg"></i>
+            افزودن پرسنل
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="app-card">
+
+    <div class="app-card-header">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <strong>
+                <i class="bi bi-people me-2"></i>
+                لیست پرسنل
+            </strong>
+
+            <span class="text-muted">
+                تعداد: @Model.Count()
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="table-responsive">
+
+        <table class="table">
+
+            <thead>
+
+                <tr>
+
+                    <th>کد پرسنلی</th>
+
+                    <th>نام و نام خانوادگی</th>
+
+                    <th>کد ملی</th>
+
+                    <th>شرکت</th>
+
+                    <th>تاریخ استخدام</th>
+
+                    <th class="text-center">عملیات</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            <span class="employee-code">
+                                @item.PersonnelCode
+                            </span>
+                        </td>
+
+                        <td>
+                            <strong>
+                                @item.FirstName @item.LastName
+                            </strong>
+                        </td>
+
+                        <td>
+                            @item.NationalCode
+                        </td>
+
+                        <td>
+                            @item.CompanyName
+                        </td>
+
+                        <td>
+                            @(item.EmploymentDate?.ToString("yyyy/MM/dd") ?? "-")
+                        </td>
+
+                        <td>
+
+                            <div class="d-flex justify-content-center gap-1">
+
+                                <a asp-action="Details"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-secondary"
+                                   title="جزئیات">
+
+                                    <i class="bi bi-eye"></i>
+
+                                </a>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-primary"
+                                   title="ویرایش">
+
+                                    <i class="bi bi-pencil"></i>
+
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-danger"
+                                   title="حذف">
+
+                                    <i class="bi bi-trash"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

@@ -1,0 +1,123 @@
+﻿@model EmployeeCrud.Models.Employee
+
+@{
+    ViewData["Title"] = "حذف پرسنل";
+}
+
+<div class="page-header">
+
+    <h1 class="page-title">
+        حذف پرسنل
+    </h1>
+
+    <p class="page-description">
+        آیا از حذف این پرسنل مطمئن هستید؟
+    </p>
+
+</div>
+
+
+<div class="employee-section">
+
+    <div class="alert alert-warning">
+
+        <i class="bi bi-exclamation-triangle me-2"></i>
+
+        با حذف این پرسنل، اطلاعات فرزندان او نیز حذف خواهد شد.
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+
+            <small class="text-muted">
+                کد پرسنلی
+            </small>
+
+            <div class="fw-bold mt-1">
+                @Model.PersonnelCode
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3">
+
+            <small class="text-muted">
+                نام
+            </small>
+
+            <div class="fw-bold mt-1">
+                @Model.FirstName
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3">
+
+            <small class="text-muted">
+                نام خانوادگی
+            </small>
+
+            <div class="fw-bold mt-1">
+                @Model.LastName
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3">
+
+            <small class="text-muted">
+                تعداد فرزندان
+            </small>
+
+            <div class="fw-bold mt-1">
+                @Model.Children.Count
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <hr class="my-4" />
+
+
+    <form asp-action="Delete"
+          method="post">
+
+        @Html.AntiForgeryToken()
+
+        <input type="hidden"
+               name="id"
+               value="@Model.Id" />
+
+
+        <div class="d-flex justify-content-end gap-2">
+
+            <a asp-action="Index"
+               class="btn btn-light border">
+
+                انصراف
+
+            </a>
+
+
+            <button type="submit"
+                    class="btn btn-danger">
+
+                <i class="bi bi-trash"></i>
+
+                حذف پرسنل
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>

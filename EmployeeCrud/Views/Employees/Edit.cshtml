@@ -1,0 +1,438 @@
+﻿@model EmployeeCrud.ViewModels.EmployeeCreateViewModel
+
+@{
+    ViewData["Title"] = "ویرایش پرسنل";
+}
+
+<div class="page-header">
+
+    <div>
+        <h1 class="page-title">
+            ویرایش پرسنل
+        </h1>
+
+        <p class="page-description">
+            اطلاعات پرسنل و فرزندان را ویرایش کنید.
+        </p>
+    </div>
+
+</div>
+
+
+<form asp-action="Edit" method="post">
+
+    @Html.AntiForgeryToken()
+
+    <input asp-for="Id" type="hidden" />
+
+    <div asp-validation-summary="ModelOnly"
+         class="alert alert-danger"></div>
+
+
+    <!-- اطلاعات پرسنل -->
+
+    <div class="employee-section">
+
+        <div class="section-title">
+
+            <i class="bi bi-person-vcard"></i>
+
+            اطلاعات پرسنل
+
+        </div>
+
+
+        <div class="row g-3">
+
+            <div class="col-md-3">
+
+                <label asp-for="PersonnelCode"
+                       class="form-label"></label>
+
+                <input asp-for="PersonnelCode"
+                       class="form-control" />
+
+                <span asp-validation-for="PersonnelCode"
+                      class="text-danger"></span>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label asp-for="FirstName"
+                       class="form-label"></label>
+
+                <input asp-for="FirstName"
+                       class="form-control" />
+
+                <span asp-validation-for="FirstName"
+                      class="text-danger"></span>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label asp-for="LastName"
+                       class="form-label"></label>
+
+                <input asp-for="LastName"
+                       class="form-control" />
+
+                <span asp-validation-for="LastName"
+                      class="text-danger"></span>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label asp-for="NationalCode"
+                       class="form-label"></label>
+
+                <input asp-for="NationalCode"
+                       class="form-control" />
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label asp-for="EmploymentDate"
+                       class="form-label"></label>
+
+                <input asp-for="EmploymentDate"
+                       type="date"
+                       class="form-control" />
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <label asp-for="Experience"
+                       class="form-label"></label>
+
+                <input asp-for="Experience"
+                       type="number"
+                       min="0"
+                       class="form-control" />
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <label asp-for="CompanyName"
+                       class="form-label"></label>
+
+                <input asp-for="CompanyName"
+                       class="form-control" />
+
+            </div>
+
+
+            <div class="col-12">
+
+                <label asp-for="Description"
+                       class="form-label"></label>
+
+                <textarea asp-for="Description"
+                          class="form-control"
+                          rows="3"></textarea>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- فرزندان -->
+
+    <div class="employee-section">
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+
+            <div class="section-title mb-0">
+
+                <i class="bi bi-people"></i>
+
+                فرزندان
+
+            </div>
+
+
+            <button type="button"
+                    class="btn btn-primary"
+                    id="btnAddChild">
+
+                <i class="bi bi-plus-lg"></i>
+
+                افزودن فرزند
+
+            </button>
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>نام فرزند</th>
+
+                        <th>تاریخ تولد</th>
+
+                        <th>جنسیت</th>
+
+                        <th>عملیات</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="childrenTable">
+
+                    @for (int i = 0; i < Model.Children.Count; i++)
+                    {
+                        <tr>
+
+                            <td>
+
+                                <input type="hidden"
+                                       name="Children[@i].Id"
+                                       value="@Model.Children[i].Id" />
+
+                                <input type="text"
+                                       name="Children[@i].Name"
+                                       value="@Model.Children[i].Name"
+                                       class="form-control"
+                                       required />
+
+                            </td>
+
+
+                            <td>
+
+                                <input type="date"
+                                       name="Children[@i].BirthDate"
+                                       value="@Model.Children[i].BirthDate?.ToString("yyyy-MM-dd")"
+                                       class="form-control" />
+
+                            </td>
+
+
+                            <td>
+
+                                <select name="Children[@i].Gender"
+                                        class="form-select">
+
+                                    <option value="">
+                                        انتخاب کنید
+                                    </option>
+
+                                    @if (Model.Children[i].Gender == "مرد")
+                                    {
+                                        <option value="مرد" selected>
+                                            پسر
+                                        </option>
+                                    }
+                                    else
+                                    {
+                                        <option value="مرد">
+                                            پسر
+                                        </option>
+                                    }
+
+                                    @if (Model.Children[i].Gender == "زن")
+                                    {
+                                        <option value="زن" selected>
+                                            دختر
+                                        </option>
+                                    }
+                                    else
+                                    {
+                                        <option value="زن">
+                                            دختر
+                                        </option>
+                                    }
+
+                                </select>
+
+                            </td>
+
+
+                            <td>
+
+                                <button type="button"
+                                        class="btn btn-sm btn-outline-danger btn-delete-child">
+
+                                    <i class="bi bi-trash"></i>
+
+                                    حذف
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div id="emptyChildren"
+             class="text-center text-muted py-4"
+             style="@(Model.Children.Any() ? "display:none" : "")">
+
+            هنوز فرزندی اضافه نشده است.
+
+        </div>
+
+    </div>
+
+
+    <!-- Buttons -->
+
+    <div class="d-flex justify-content-end gap-2">
+
+        <a asp-action="Index"
+           class="btn btn-light border">
+
+            انصراف
+
+        </a>
+
+
+        <button type="submit"
+                class="btn btn-primary">
+
+            <i class="bi bi-check-lg"></i>
+
+            ذخیره تغییرات
+
+        </button>
+
+    </div>
+
+</form>
+
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+
+        let childIndex = @Model.Children.Count;
+
+        const table =
+            document.getElementById("childrenTable");
+
+        const empty =
+            document.getElementById("emptyChildren");
+
+
+        document.getElementById("btnAddChild")
+            .addEventListener("click", function () {
+
+                empty.style.display = "none";
+
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+
+                    <td>
+
+                        <input type="hidden"
+                               name="Children[${childIndex}].Id"
+                               value="0" />
+
+                        <input type="text"
+                               name="Children[${childIndex}].Name"
+                               class="form-control"
+                               placeholder="نام فرزند"
+                               required />
+
+                    </td>
+
+                    <td>
+
+                        <input type="date"
+                               name="Children[${childIndex}].BirthDate"
+                               class="form-control" />
+
+                    </td>
+
+                    <td>
+
+                        <select name="Children[${childIndex}].Gender"
+                                class="form-select">
+
+                            <option value="">
+                                انتخاب کنید
+                            </option>
+
+                            <option value="مرد">
+                                پسر
+                            </option>
+
+                            <option value="زن">
+                                دختر
+                            </option>
+
+                        </select>
+
+                    </td>
+
+                    <td>
+
+                        <button type="button"
+                                class="btn btn-sm btn-outline-danger btn-delete-child">
+
+                            <i class="bi bi-trash"></i>
+                            حذف
+
+                        </button>
+
+                    </td>
+                `;
+
+                table.appendChild(row);
+
+                childIndex++;
+
+            });
+
+
+        table.addEventListener("click", function (e) {
+
+            const button =
+                e.target.closest(".btn-delete-child");
+
+            if (!button)
+                return;
+
+            button.closest("tr").remove();
+
+            if (table.children.length === 0) {
+
+                empty.style.display = "block";
+
+            }
+
+        });
+
+    </script>
+}

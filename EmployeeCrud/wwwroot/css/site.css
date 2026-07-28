@@ -1,0 +1,254 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263238;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.app-navbar {
+    min-height: 68px;
+    background: linear-gradient(135deg, #173b6c, #2563a6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255,255,255,.15);
+    font-size: 20px;
+}
+
+.navbar .nav-link {
+    color: rgba(255,255,255,.85);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+    .navbar .nav-link:hover {
+        color: #fff;
+        background: rgba(255,255,255,.12);
+    }
+
+
+/* =========================
+   Main
+========================= */
+
+.main-content {
+    min-height: calc(100vh - 130px);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.app-card {
+    border: 0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .06);
+}
+
+.app-card-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #edf0f5;
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+}
+
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.page-description {
+    color: #7b8794;
+    margin: 0;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    border-radius: 9px;
+    padding: 9px 16px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #2563a6;
+    border-color: #2563a6;
+}
+
+    .btn-primary:hover {
+        background: #173b6c;
+        border-color: #173b6c;
+    }
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* =========================
+   Tables
+========================= */
+
+.table {
+    margin-bottom: 0;
+}
+
+    .table thead th {
+        background: #f8fafc;
+        color: #475569;
+        font-weight: 600;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 14px;
+        white-space: nowrap;
+    }
+
+    .table tbody td {
+        padding: 14px;
+        vertical-align: middle;
+        border-bottom: 1px solid #f0f2f5;
+    }
+
+    .table tbody tr:hover {
+        background: #f8fbff;
+    }
+
+
+/* =========================
+   Form
+========================= */
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    min-height: 44px;
+    border-radius: 9px;
+    border: 1px solid #dce1e8;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #2563a6;
+        box-shadow: 0 0 0 .2rem rgba(37, 99, 166, .12);
+    }
+
+
+/* =========================
+   Employee Section
+========================= */
+
+.employee-section {
+    border: 1px solid #e8ecf2;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #173b6c;
+}
+
+    .section-title i {
+        font-size: 19px;
+    }
+
+
+/* =========================
+   Badge
+========================= */
+
+.employee-code {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background: #eef5ff;
+    color: #2563a6;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.app-footer {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid #e8ecf2;
+    color: #7b8794;
+    font-size: 13px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .main-content {
+        padding-top: 20px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .app-card-header {
+        padding: 16px;
+    }
+}
