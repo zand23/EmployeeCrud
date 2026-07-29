@@ -28,6 +28,7 @@ public class AppDbContext : DbContext
             .OnDelete(DeleteBehavior.Cascade);
 
         // AppUser → Employee
+
         modelBuilder.Entity<Employee>()
             .HasOne(x => x.CreatedByUser)
             .WithMany()

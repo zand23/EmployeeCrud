@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\f\\EmployeeCrud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|d:\\f\\employeecrud\\employeecrud\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8332B0BD-CFCA-1128-934D-B48333953983}|EmployeeCrud\\EmployeeCrud.csproj|solutionrelative:employeecrud\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,23 +54,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "EmployeeCrud\\appsettings.Development.json",
-              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\appsettings.Development.json",
-              "RelativeToolTip": "EmployeeCrud\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T06:49:19.474Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\appsettings.json",
               "RelativeDocumentMoniker": "EmployeeCrud\\appsettings.json",
@@ -91,43 +79,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbSeeder.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Data\\DbSeeder.cs",
               "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbSeeder.cs",
               "RelativeToolTip": "EmployeeCrud\\Data\\DbSeeder.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBgAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T13:05:16.886Z"
+              "WhenOpened": "2026-07-28T13:05:16.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Views\\Employees\\Index.cshtml",
               "RelativeDocumentMoniker": "EmployeeCrud\\Views\\Employees\\Index.cshtml",
               "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Views\\Employees\\Index.cshtml",
               "RelativeToolTip": "EmployeeCrud\\Views\\Employees\\Index.cshtml",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAgwGIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-28T12:59:57.574Z"
+              "WhenOpened": "2026-07-28T12:59:57.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "EmployeeCrud\\Controllers\\EmployeesController.cs",
-              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "EmployeeCrud\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T12:55:45.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "EmployeeCrud\\Views\\Account\\Login.cshtml",
@@ -139,31 +117,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\AccountController.cs",
               "RelativeToolTip": "EmployeeCrud\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAwwGAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T12:52:10.113Z"
+              "WhenOpened": "2026-07-28T12:52:10.113Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "EmployeeCrud\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "EmployeeCrud\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T12:51:48.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Program.cs",
@@ -175,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "EmployeeChildModel.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Models\\EmployeeChildModel.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Models\\EmployeeChildModel.cs",
@@ -187,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AppUserModel.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Models\\AppUserModel.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Models\\AppUserModel.cs",
@@ -199,7 +166,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeCrud\\Data\\DbContext.cs",
+              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbContext.cs",
+              "RelativeToolTip": "EmployeeCrud\\Data\\DbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T12:38:03.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "EmployeeCrud\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "EmployeeCrud\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T12:55:45.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmployeeModel.cs",
               "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Models\\EmployeeModel.cs",
               "RelativeDocumentMoniker": "EmployeeCrud\\Models\\EmployeeModel.cs",
@@ -208,18 +200,6 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAqwCUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-28T12:46:17.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbContext.cs",
-              "RelativeDocumentMoniker": "EmployeeCrud\\Data\\DbContext.cs",
-              "ToolTip": "D:\\f\\EmployeeCrud\\EmployeeCrud\\Data\\DbContext.cs",
-              "RelativeToolTip": "EmployeeCrud\\Data\\DbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T12:38:03.252Z"
             }
           ]
         }
