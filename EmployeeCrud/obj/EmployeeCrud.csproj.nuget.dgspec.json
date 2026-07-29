@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Employee\\EmployeeCrud\\EmployeeCrud.csproj": {}
+    "D:\\f\\EmployeeCrud\\EmployeeCrud\\EmployeeCrud.csproj": {}
   },
   "projects": {
-    "D:\\Employee\\EmployeeCrud\\EmployeeCrud.csproj": {
+    "D:\\f\\EmployeeCrud\\EmployeeCrud\\EmployeeCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Employee\\EmployeeCrud\\EmployeeCrud.csproj",
+        "projectUniqueName": "D:\\f\\EmployeeCrud\\EmployeeCrud\\EmployeeCrud.csproj",
         "projectName": "EmployeeCrud",
-        "projectPath": "D:\\Employee\\EmployeeCrud\\EmployeeCrud.csproj",
+        "projectPath": "D:\\f\\EmployeeCrud\\EmployeeCrud\\EmployeeCrud.csproj",
         "packagesPath": "C:\\Users\\zand-f\\.nuget\\packages\\",
-        "outputPath": "D:\\Employee\\EmployeeCrud\\obj\\",
+        "outputPath": "D:\\f\\EmployeeCrud\\EmployeeCrud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

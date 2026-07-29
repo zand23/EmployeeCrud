@@ -9,9 +9,7 @@ public class AppDbContext : DbContext
         : base(options)
     {
     }
-    /// <summary>
-    /// /
-    /// </summary>
+
     public DbSet<Employee> Employees => Set<Employee>();
 
     public DbSet<EmployeeChild> EmployeeChildren => Set<EmployeeChild>();

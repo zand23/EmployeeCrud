@@ -34,7 +34,69 @@
 <div class="app-card">
 
     <div class="app-card-header">
+        <div class="p-3 border-bottom">
 
+            <form asp-action="Index"
+                  method="get">
+
+                <div class="row g-2 align-items-center">
+
+                    <div class="col-md-7">
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-search"></i>
+
+                            </span>
+
+                            <input type="text"
+                                   name="search"
+                                   value="@ViewBag.Search"
+                                   class="form-control"
+                                   placeholder="جستجوی کد پرسنلی، نام، نام خانوادگی یا کد ملی..." />
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-auto">
+
+                        <button type="submit"
+                                class="btn btn-primary">
+
+                            <i class="bi bi-search me-1"></i>
+
+                            جستجو
+
+                        </button>
+
+                    </div>
+
+
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.Search as string))
+                    {
+                        <div class="col-auto">
+
+                            <a asp-action="Index"
+                               class="btn btn-outline-secondary">
+
+                                <i class="bi bi-x-lg me-1"></i>
+
+                                پاک کردن
+
+                            </a>
+
+                        </div>
+                    }
+
+                </div>
+
+            </form>
+
+        </div>
         <div class="d-flex justify-content-between align-items-center">
 
             <strong>
@@ -66,7 +128,9 @@
                     <th>کد ملی</th>
 
                     <th>شرکت</th>
-
+                    <th>
+                        ثبت‌کننده
+                    </th>
                     <th>تاریخ استخدام</th>
 
                     <th class="text-center">عملیات</th>
@@ -101,7 +165,26 @@
                         <td>
                             @item.CompanyName
                         </td>
+                        <td>
 
+                            @if (item.CreatedByUser != null)
+                            {
+                                <span class="badge bg-light text-dark border">
+
+                                    <i class="bi bi-person-check me-1"></i>
+
+                                    @item.CreatedByUser.DisplayName
+
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">
+                                    -
+                                </span>
+                            }
+
+                        </td>
                         <td>
                             @(item.EmploymentDate?.ToString("yyyy/MM/dd") ?? "-")
                         </td>

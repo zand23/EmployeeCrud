@@ -3,9 +3,11 @@ using EmployeeCrud.Models;
 using EmployeeCrud.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 namespace EmployeeCrud.Controllers;
 
+[Authorize]
 public class EmployeesController : Controller
 {
     private readonly AppDbContext _context;
@@ -21,8 +23,9 @@ public class EmployeesController : Controller
     public async Task<IActionResult> Index(string? search)
     {
         var query = _context.Employees
-            .Include(x => x.Children)
-            .AsQueryable();
+          .Include(x => x.Children)
+          .Include(x => x.CreatedByUser)
+          .AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(search))
         {
@@ -46,12 +49,6 @@ public class EmployeesController : Controller
         return View(employees);
     }
 
-    // =========================
-    // CREATE - GET
-    // =========================
-    // =========================
-    // CREATE - GET
-    // =========================
     // =========================
     // CREATE - GET
     // =========================
@@ -81,7 +78,9 @@ public class EmployeesController : Controller
             EmploymentDate = model.EmploymentDate,
             Experience = model.Experience,
             CompanyName = model.CompanyName,
-            Description = model.Description
+            Description = model.Description,
+            CreatedByUserId = int.Parse(
+                User.FindFirstValue(ClaimTypes.NameIdentifier)!)
         };
 
         foreach (var child in model.Children)
